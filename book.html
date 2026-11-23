@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book a Table - Spice Delight</title>
+</head>
+<body>
+  <header>
+    <h1>&#127835; Spice Delight</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="menu.html">Menu</a> |
+      <a href="book.html">Book Table</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <hr>
+  <main>
+    <h2>Book a Table</h2>
+    <form action="#" method="post">
+      <p>Name*: <input type="text" name="name" required></p>
+      <p>Phone*: <input type="tel" name="phone" required pattern="[0-9]{10}"></p>
+      <p>Date*: <input type="date" name="date" required></p>
+      <p>Time*: <input type="time" name="time" required></p>
+      <p>Guests*: <input type="number" name="guests" min="1" max="20" required></p>
+      <p>Seating:
+        <input type="radio" name="seat" value="indoor" checked> Indoor
+        <input type="radio" name="seat" value="outdoor"> Outdoor
+      </p>
+      <p>Special request:<br><textarea name="note" rows="3" cols="30"></textarea></p>
+      <button type="submit">Book Now</button>
+    </form>
+  </main>
+  <footer><hr><p>&copy; 2026 Spice Delight</p></footer>
+</body>
+</html>
