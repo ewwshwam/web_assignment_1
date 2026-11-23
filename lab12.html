@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Elements</title>
+</head>
+<body>
+  <h1>HTML5 Elements</h1>
+
+  <h3>details and summary</h3>
+  <details>
+    <summary>Click to read more</summary>
+    <p>This hidden text appears when you click the summary.</p>
+  </details>
+
+  <h3>progress</h3>
+  Download: <progress value="70" max="100">70%</progress>
+
+  <h3>meter</h3>
+  Disk usage: <meter value="6" min="0" max="10">6 out of 10</meter>
+
+  <h3>dialog</h3>
+  <dialog id="myDialog">
+    <p>Hello! I am a dialog box.</p>
+    <button onclick="document.getElementById('myDialog').close()">Close</button>
+  </dialog>
+  <button onclick="document.getElementById('myDialog').showModal()">Open Dialog</button>
+
+  <h3>figure and figcaption</h3>
+  <figure>
+    <img src="images/photo.jpg" alt="Sample" width="250">
+    <figcaption>Figure 1: A sample photo</figcaption>
+  </figure>
+</body>
+</html>

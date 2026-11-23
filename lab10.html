@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admission Form</title>
+</head>
+<body>
+  <h1>Online Admission Form</h1>
+  <form action="#" method="post">
+    <p><label>Full Name*:
+      <input type="text" name="name" required minlength="3" maxlength="50">
+    </label></p>
+    <p><label>Email*:
+      <input type="email" name="email" required>
+    </label></p>
+    <p><label>Mobile* (10 digits):
+      <input type="tel" name="mobile" required pattern="[0-9]{10}" title="Enter 10 digit number">
+    </label></p>
+    <p><label>Percentage in last exam*:
+      <input type="number" name="percent" required min="35" max="100" step="0.01">
+    </label></p>
+    <p><label>Date of Birth*:
+      <input type="date" name="dob" required>
+    </label></p>
+    <p><label>Course*:
+      <select name="course" required>
+        <option value="">-- Select --</option>
+        <option>MCA</option>
+        <option>MBA</option>
+      </select>
+    </label></p>
+    <p><label>Website:
+      <input type="url" name="site" placeholder="https://">
+    </label></p>
+    <p><label>Address*:<br>
+      <textarea name="address" rows="3" cols="30" required></textarea>
+    </label></p>
+    <p><input type="checkbox" required> I agree to the terms and conditions</p>
+    <button type="submit">Submit Application</button>
+  </form>
+</body>
+</html>
